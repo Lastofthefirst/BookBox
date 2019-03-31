@@ -1,1 +1,98 @@
 /* Your app styles here */
+/* Your app styles here */
+.navbar-inner{
+    background-color: rgba(200,80,1,0.6) !important;
+    }
+    
+    .puritybook{
+      width: 90vh;
+    
+    }
+    .page-content{
+    
+    background-color: rgba(181,148,116,0.65);
+    }
+    
+    .list{
+    background-color: rgba(130,106,83,0.65);
+    color: white;
+    border-radius:0px 10px 10px 0px;
+    }
+    
+    /* or an alternative brown color scheme:
+    .page-content{
+    
+    background-color: rgba(181,148,116,0.65);
+    }
+    
+    .list{
+    background-color: white;
+    color: rgba(150,80,80,0.8);
+    border-radius:0px 10px 10px 0px;
+    font-weight: bold;
+    }
+    */
+    
+    .block-title{
+      font-family: Georgia, serif;
+      font-size: 20px;
+      letter-spacing: 0px;
+      word-spacing: 0px;
+      color: #000000;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: small-caps;
+      text-transform: none;
+    }
+    
+    .frontimages{
+      width: 24%;
+      height: auto;
+      max-height: 18%;
+      max-width: 200px;
+    }
+    
+    @media only screen and (max-width: 800px)
+    {
+    #prayer1{
+      width: 500px;
+    }
+    }
+    @media only screen and (min-width: 801px)
+    {
+    #prayer1{
+      width: 800px;
+    }
+    }
+    .demo-card-header-pic .card-header {
+      height: 40vw;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    .demo-card-header-pic .card-content-padding .date{
+      color: #8e8e93;
+    }
+    
+    .swiper-container .swiper-slide {
+      font-size: 25px;
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      color: #000;
+    }
+    /*.swiper-container .swiper-slide {
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+    */
+    .bookpage {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+    
