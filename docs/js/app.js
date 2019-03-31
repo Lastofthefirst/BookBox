@@ -1,18 +1,32 @@
 // Framework7 App main instance
-var app  = new Framework7({
+let app  = new Framework7({
   root: '#app'
 });
 // Init/Create main view
-var mainView = app.views.create('.view-main', {
+let mainView = app.views.create('.view-main', {
   url: '/'
 });
 
-var purchasedBooks = [];
+let purchasedBooks = [];
 
 function loadPurchasedBooks() {
   purchasedBooks.forEach(function(book) {
     $("#" + book).show();
   });
+}
+
+
+function reader_Screen(cl, vw){
+  let els = document.getElementsByClassName(cl);
+  for(let i=0; i<els.length; ++i){
+     let s = els[i].style;
+     s.display = s.display==='none' ? 'block' : 'none';
+  };
+  let view = document.getElementsByClassName(vw);
+  for(let i=0; i<view.length; ++i){
+     let s = view[i].style;
+     s.backgroundColor = s.backgroundColor==='black' ? 'white' : 'black';
+  };
 }
 
 localforage.clear('ownedBooks').then(function() {
@@ -54,7 +68,7 @@ function tutorial() {
   let b = document.getElementById("puritybook");
   let c = document.getElementById("hasanbook");
   let d = document.getElementById("tutordisplay");
-  if (a.style.display === "none" && b.style.displayer === "none" && c.style.display === "none"){
+  if (a.style.display === "none" && b.style.display === "none" && c.style.display === "none"){
     d.style.display = "block";
     console.log('heres your tutorial');
   }
@@ -63,25 +77,25 @@ function tutorial() {
   }
 };
 /*function showPrayer() {
-  var x = document.getElementById("prayerbook");
+  let x = document.getElementById("prayerbook");
   if (x.style.display === "none") {
     x.style.display = "block";
   }
 };
 function showPurity() {
-  var x = document.getElementById("puritybook");
+  let x = document.getElementById("puritybook");
   if (x.style.display === "none") {
     x.style.display = "block";
   }
 };
 function showHasan() {
-  var x = document.getElementById("hasanbook");
+  let x = document.getElementById("hasanbook");
   if (x.style.display === "none") {
     x.style.display = "block";
   }
 };
 */
-var prayerSwiper;
+let prayerSwiper;
 $('#prayer').on('popup:opened', function (e, popup) {
   prayerSwiper = app.swiper.create('.swiper-container', {
     speed: 400,
@@ -91,7 +105,7 @@ $('#prayer').on('popup:opened', function (e, popup) {
 $('#prayer').on('popup:closed', function (e, popup) {
   app.swiper.destroy('.swiper-container');
 });
-var puritySwiper;
+let puritySwiper;
 $('#purity').on('popup:opened', function (e, popup) {
   puritySwiper = app.swiper.create('.swiper-container', {
     speed: 400,

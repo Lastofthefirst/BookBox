@@ -1,21 +1,11 @@
 /* Your app styles here */
-.navbar-inner{
-  background-color: rgba(200,80,1,0.6) !important;
-  }
-  
+
   .puritybook{
     width: 90vh;
   
   }
-  .page-content{
+
   
-  background-color: rgba(181,148,116,0.65);
-  }
-  
-  .list{
-  background-color: rgba(130,106,83,0.65);
-  border-radius:0px 10px 10px 0px;
-  }
   
   /* or an alternative brown color scheme:
   .page-content{
@@ -93,4 +83,5 @@
     height: auto;
     max-height: 100%;
   }
+  
   
