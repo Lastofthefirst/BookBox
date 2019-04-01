@@ -15,6 +15,7 @@ function loadPurchasedBooks() {
   });
 }
 
+let none;
 
 function reader_Screen(cl, vw){
   let els = document.getElementsByClassName(cl);
