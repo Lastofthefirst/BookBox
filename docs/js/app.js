@@ -2,6 +2,9 @@
 let app  = new Framework7({
   root: '#app'
 });
+
+let $$ = Dom7;
+
 // Init/Create main view
 let mainView = app.views.create('.view-main', {
   url: '/'
@@ -29,6 +32,19 @@ function reader_Screen(cl, vw){
      s.backgroundColor = s.backgroundColor==='black' ? 'white' : 'black';
   };
 }
+
+var myPhotoBrowserStandalone = app.photoBrowser.create({
+  photos : [
+      'Ob/Ob.001.jpeg',
+      'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+      'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+  ]
+});
+//Open photo browser on click
+$$('.pb-standalone').on('click', function () {
+  myPhotoBrowserStandalone.open();
+});
+
 
 localforage.clear('ownedBooks').then(function() {
   // Run this code once the database has been entirely deleted.
@@ -125,5 +141,38 @@ $('#lions').on('popup:opened', function (e, popup) {
   });
 });
 $('#lions').on('popup:closed', function (e, popup) {
+  app.swiper.destroy('.swiper-container');
+});
+
+let elephantsSwiper;
+$('#elephants').on('popup:opened', function (e, popup) {
+  lionSwiper = app.swiper.create('.swiper-container', {
+    speed: 400,
+    spaceBetween: 0
+  });
+});
+$('#elephants').on('popup:closed', function (e, popup) {
+  app.swiper.destroy('.swiper-container');
+});
+
+let dolphinsSwiper;
+$('#dolphins').on('popup:opened', function (e, popup) {
+  lionSwiper = app.swiper.create('.swiper-container', {
+    speed: 400,
+    spaceBetween: 0
+  });
+});
+$('#dolphins').on('popup:closed', function (e, popup) {
+  app.swiper.destroy('.swiper-container');
+});
+
+let obedienceSwiper;
+$('#obedience').on('popup:opened', function (e, popup) {
+  lionSwiper = app.swiper.create('.swiper-container', {
+    speed: 400,
+    spaceBetween: 0
+  });
+});
+$('#obedience').on('popup:closed', function (e, popup) {
   app.swiper.destroy('.swiper-container');
 });

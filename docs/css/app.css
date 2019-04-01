@@ -27,6 +27,10 @@
     font-variant: small-caps;
     text-transform: none;
   }
+
+  .item-title{
+    font-family: Georgia, serif;
+  }
   
  
   .demo-card-header-pic .card-header {

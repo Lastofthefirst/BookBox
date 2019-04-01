@@ -31,10 +31,7 @@
          justify-content:center;
          align-items:center;
       }
-      .center {
-    margin:auto;
-    background-color:green;
-      }
+
       </style>
    </head>
    <body>
@@ -109,6 +106,27 @@
          </a>
          </div>
       </div>
+      <div class="block" id="elephantsbook" style="display:none;">
+            <div class="card demo-card-header-pic">
+                  <a href="#" class="popup-open" data-popup="#elephants">
+               <div style="background-image:url(E/ECover.png)" class="card-header align-items-flex-end">Exploring Material Reality: Elephants</div>
+            </a>
+            </div>
+         </div>
+         <div class="block" id="dolphinsbook" style="display:none;">
+               <div class="card demo-card-header-pic">
+                     <a href="#" class="popup-open" data-popup="#dolphins">
+                  <div style="background-image:url(dol/DolCover.png)" class="card-header align-items-flex-end">Exploring Material Reality: Dolphins</div>
+               </a>
+               </div>
+            </div>
+            <div class="block" id="obediencebook" style="display:none;">
+                  <div class="card demo-card-header-pic">
+                        <a href="#" class="popup-open" data-popup="#obedience">
+                     <div style="background-image:url(Ob/ObCover.png)" class="card-header align-items-flex-end">A Story About Deer: Obedience</div>
+                  </a>
+                  </div>
+               </div>
         <div class="block" id="tutordisplay">
            <div class="card demo-card-header-pic">
               <a href="#" class="popup-open" data-popup="#shop" onclick="setTimeout(this.parentNode.style.display = 'none',30000);" style="display:block">
@@ -117,10 +135,8 @@
            </div>
         </div>
 
-
-            <center>
-               <p style="font-size:10px;">Many of these books were written with to explore concepts found within the Teachings of the Baha'i Faith. The Baha'i Faith is a world religion whose Teachings are a much needed balm for the many ailments troubling mankind. Baha'is are followers of Baha'u'llah whose name means "The Glory of God." For more information about the Baha'i Faith or to contact Baha'is near you start investigating at <a class="link external" href="https://www.bahai.org">www.bahai.org.</a></p>
-            </center>
+        <div class="col-33"><a href="#" class="button button-fill pb-standalone">Viewer</a></div>
+               <p style="text-align: center; font-size:10px;">Many of these books were written with to explore concepts found within the Teachings of the Baha'i Faith. The Baha'i Faith is a world religion whose Teachings are a much needed balm for the many ailments troubling mankind. Baha'is are followers of Baha'u'llah whose name means "The Glory of God." For more information about the Baha'i Faith or to contact Baha'is near you start investigating at <a class="link external" href="https://www.bahai.org">www.bahai.org.</a></p>
          </div>
          <!-- Popup -->
          <div class="popup popup-tablet-fullscreen" id="shop">
@@ -134,114 +150,117 @@
                         </div>
                      </div>
                   </div>
-                  <div class="page-content">
+                  <div class="page-content"> 
                     <div class="block block-strong">
-                       <h1 class="block-title">Exploring Spiritual Reality:</h1>
-                       <div  id="lists" class="list accordion-list">
-                          <ul>
-                             <li class="accordion-item">
-                                <a href="#" class="item-content item-link">
-                                   <div class="item-inner">
-                                      <div class="item-title">Prayer</div>
-                                   </div>
-                                </a>
-                                <div class="accordion-item-content">
-                                   <div class="block">
-                                      <div class="card demo-card-header-pic">
-                                         <div style="background-image:url(p/p1.jpeg)" class="card-header align-items-flex-end"></div>
-                                         <div class="card-footer"><a><a class="link popup-close" onclick="purchaseBook('prayer');">Free</a></div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                             <li class="accordion-item">
-                                <a href="#" class="item-content item-link">
-                                   <div class="item-inner">
-                                      <div class="item-title">Purity of Heart</div>
-                                   </div>
-                                </a>
-                                <div class="accordion-item-content">
-                                   <div class="block">
-                                      <div class="card demo-card-header-pic">
-                                         <div style="background-image:url(pure/teachings.png)" style="color:black;" class="card-header align-items-flex-end"></div>
-                                         <div class="card-footer"><a></a><a class="link popup-close" onclick="purchaseBook('purity');">$0.99</a>
-</div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                          </ul>
-                       </div>
-                       <div class="block-title">Exploring Material Reality</div>
-                       <div class="list accordion-list">
-                          <ul>
-                             <li class="accordion-item">
-                                <a href="#" class="item-content item-link">
-                                   <div class="item-inner">
-                                      <div class="item-title">Lions</div>
-                                   </div>
-                                </a>
-                                <div class="accordion-item-content">
-                                   <div class="block">
-                                      <div class="card demo-card-header-pic">
-                                         <div style="background-image:url(l/lion8.png)" class="card-header align-items-flex-end">Exploring Material Reality: Lions</div>
-                                         <div class="card-footer"><a></a><a class="link popup-close" onclick="purchaseBook('lions');" href="#" data-popover=".popover-links">Free</a></div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                             <li class="accordion-item">
-                                <a href="#" class="item-content item-link">
-                                   <div class="item-inner">
-                                      <div class="item-title">Birds</div>
-                                   </div>
-                                </a>
-                                <div class="accordion-item-content">
-                                   <div class="block">
-                                      <div class="card demo-card-header-pic">
-                                         <div style="background-image:url(holder/bird.png)" style="color:black;" class="card-header align-items-flex-end">Exploring Material Reality: Birds</div>
-                                         <div class="card-footer"><a></a><a class="link popover-open" href="#" data-popover=".popover-links">$0.99</a></div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                          </ul>
-                       </div>
-                       <div class="block-title">Stories of the Servants:</div>
-                       <div class="list accordion-list">
-                          <ul>
-                             <li class="accordion-item">
-                                <a href="#" class="item-content item-link">
-                                   <div class="item-inner">
-                                      <div class="item-title">Shaykh Hasan and His Heart's Desire</div>
-                                   </div>
-                                </a>
-                                <div class="accordion-item-content">
-                                   <div class="block">
-                                      <div class="card demo-card-header-pic">
-                                         <div style="background-image:url(holder/desire.png)" class="card-header align-items-flex-end"></div>
-
-                                         <div class="card-footer"><a></a><a class="link popup-close" onclick="showHasan()">$0.99</a></div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                             <li class="accordion-item">
-                                <a href="#" class="item-content item-link">
-                                   <div class="item-inner">
-                                      <div class="item-title">Blessed uncle Tom</div>
-                                   </div>
-                                </a>
-                                <div class="accordion-item-content">
-                                   <div class="block">
-                                      <div class="card demo-card-header-pic">
-                                         <div style="background-image:url(holder/build.png)" style="color:black;" class="card-header align-items-flex-end"></div>
-
-                                         <div class="card-footer"><a></a><a class="link popover-open" href="#" data-popover=".popover-links">$0.99</a></div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
+                        <h1 class="block-title">Categories</h1>
+                        <div  id="lists" class="list accordion-list">
+                           <ul>
+                              <li class="accordion-item">
+                                 <a href="#" class="item-content item-link">
+                                    <div class="item-inner">
+                                       <div class="item-title">Exploring Spiritual Reality</div>
+                                    </div>
+                                 </a>
+                                 <div class="accordion-item-content">
+                                    <div class="block">
+                                          <div class="list media-list">
+                                                <ul>
+                                                  <li>
+                                                    <a href="#" onclick="purchaseBook('prayer');" class="item-link popup-close item-content">
+                                                      <div class="item-media"><img src="p/p1.jpeg" width="80"/></div>
+                                                      <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                          <div class="item-title">Exploring Spiritual Reality: Prayer</div>
+                                                          <div class="item-after">$0.99</div>
+                                                        </div>
+                                                        <div class="item-subtitle">How do we pray?</div>
+                                                        <div class="item-text">Exploring the concept of prayer and its associated habits and behaviors.</div>
+                                                      </div></a></li>
+                                                      
+                                    </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="accordion-item">
+                                    <a href="#" class="item-content item-link">
+                                       <div class="item-inner">
+                                          <div class="item-title">Stories</div>
+                                       </div>
+                                    </a>
+                                    <div class="accordion-item-content">
+                                       <div class="block">
+                                             <div class="list media-list">
+                                                   <ul>
+                                                     <li>
+                                                       <a href="#" onclick="purchaseBook('obedience');" class="item-link popup-close item-content">
+                                                         <div class="item-media"><img src="Ob/Ob.001.jpeg" width="80"/></div>
+                                                         <div class="item-inner">
+                                                           <div class="item-title-row">
+                                                             <div class="item-title">Obedience</div>
+                                                             <div class="item-after">$0.99</div>
+                                                           </div>
+                                                           <div class="item-subtitle">A Story About Deer</div>
+                                                           <div class="item-text">A young deer learns about obedience.</div>
+                                                         </div></a></li>
+                                       </div>
+                                    </div>
+                                 </li>
+                              <li class="accordion-item">
+                                 <a href="#" class="item-content item-link">
+                                    <div class="item-inner">
+                                       <div class="item-title">Exploring Material Reality</div>
+                                       
+                                    </div>
+                                 </a>
+                                 <div class="accordion-item-content">
+                                    <div class="block">
+                                          <div class="list media-list">
+                                                <ul>
+                                                  <li>
+                                                    <a href="#" onclick="purchaseBook('lions');" class="item-link popup-close item-content">
+                                                      <div class="item-media"><img src="l/lion1.png" width="80"/></div>
+                                                      <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                          <div class="item-title">Lions</div>
+                                                          <div class="item-after">$0.99</div>
+                                                        </div>
+                                                        <div class="item-subtitle"></div>
+                                                        <div class="item-text">A bit of gathered information and a few pictures of lions.</div>
+                                                      </div></a></li>
+                                                  <li>
+                                                      <a href="#" onclick="purchaseBook('elephants');" class="item-link popup-close item-content">
+                                                      <div class="item-media"><img src="E/Elephants.001.png" width="80"/></div>
+                                                      <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                          <div class="item-title">Elephants</div>
+                                                          <div class="item-after">$0.99</div>
+                                                        </div>
+                                                        <div class="item-subtitle"></div>
+                                                        <div class="item-text">Learn about Elephants in this book.</div>
+                                                      </div>
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#" onclick="purchaseBook('dolphins');" class="item-link popup-close item-content">
+                                                      <div class="item-media"><img src="dol/dol.001.png" width="80"/></div>
+                                                      <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                          <div class="item-title">Dolphins</div>
+                                                          <div class="item-after">Free</div>
+                                                        </div>
+                                                        <div class="item-subtitle"></div>
+                                                        <div class="item-text">Have you ever seen a dolphin?</div>
+                                                      </div>
+                                                    </a>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                       
                           </ul>
                        </div>
                </div>
@@ -256,7 +275,7 @@
                      <div class="navbar-inner">
                         <div class="title">Exploring Spiritual Reality: Prayer</div>
                         <div class="right">
-                           <a href="#" class="link popup-close" id="closeprayer">Close</a>
+                           <a href="#" class="link popup-close" >Close</a>
                         </div>
                      </div>
                   </div>
@@ -311,7 +330,7 @@
                      <div class="navbar-inner">
                         <div class="title">Exploring Material Reality: Lions</div>
                         <div class="right">
-                           <a href="#" class="link popup-close" id="closeprayer">Close</a>
+                           <a href="#" class="link popup-close">Close</a>
                         </div>
                      </div>
                   </div>
@@ -338,6 +357,113 @@
             </div>
          </div>
 
+         <div class="popup popup-tablet-fullscreen" id="elephants">
+               <div class="view">
+                  <div class="page">
+                     <div class="navbar">
+                        <div class="navbar-inner">
+                           <div class="title">Exploring Material Reality: Elephants</div>
+                           <div class="right">
+                              <a href="#" class="link popup-close" >Close</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="page-content bookView">
+                       <div class="swiper-container">
+                         <!-- Slides wrapper -->
+                         <div class="swiper-wrapper" onclick="reader_Screen('navbar','bookView')">
+                             <!-- Slides -->
+                             <div class="swiper-slide"><img src="E/Elephants.001.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.002.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.003.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.004.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.005.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.006.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.007.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.008.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.009.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.010.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.011.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.012.png" class="bookpage"></div>
+                             <div class="swiper-slide"><img src="E/Elephants.013.png" class="bookpage"></div>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="popup popup-tablet-fullscreen" id="dolphins">
+                  <div class="view">
+                     <div class="page">
+                        <div class="navbar">
+                           <div class="navbar-inner">
+                              <div class="title">Exploring Material Reality: Dolphins</div>
+                              <div class="right">
+                                 <a href="#" class="link popup-close">Close</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="page-content bookView">
+                          <div class="swiper-container">
+                            <!-- Slides wrapper -->
+                            <div class="swiper-wrapper" onclick="reader_Screen('navbar','bookView')">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="dol/dol.001.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.002.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.003.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.004.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.005.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.006.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.007.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.008.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.009.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.010.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.011.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.012.png" class="bookpage"></div>
+                                <div class="swiper-slide"><img src="dol/dol.013.png" class="bookpage"></div>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="popup popup-tablet-fullscreen" id="obedience">
+                     <div class="view">
+                        <div class="page">
+                           <div class="navbar">
+                              <div class="navbar-inner">
+                                 <div class="title">A Story About Deer: Obedience</div>
+                                 <div class="right">
+                                    <a href="#" class="link popup-close">Close</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="page-content bookView">
+                             <div class="swiper-container">
+                               <!-- Slides wrapper -->
+                               <div class="swiper-wrapper" onclick="reader_Screen('navbar','bookView')">
+                                   <!-- Slides -->
+                                   <div class="swiper-slide"><img src="Ob/Ob.001.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.002.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.003.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.004.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.005.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.006.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.007.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.008.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.009.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.010.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.011.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.012.jpeg" class="bookpage"></div>
+                                   <div class="swiper-slide"><img src="Ob/Ob.013.jpeg" class="bookpage"></div>
+                               </div>
+                             </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
 
       <div class="popup popup-tablet-fullscreen" id="options">
          <div class="view">
