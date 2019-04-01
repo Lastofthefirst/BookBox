@@ -146,7 +146,7 @@ $('#lions').on('popup:closed', function (e, popup) {
 
 let elephantsSwiper;
 $('#elephants').on('popup:opened', function (e, popup) {
-  lionSwiper = app.swiper.create('.swiper-container', {
+  elephantSwiper = app.swiper.create('.swiper-container', {
     speed: 400,
     spaceBetween: 0
   });
@@ -157,7 +157,7 @@ $('#elephants').on('popup:closed', function (e, popup) {
 
 let dolphinsSwiper;
 $('#dolphins').on('popup:opened', function (e, popup) {
-  lionSwiper = app.swiper.create('.swiper-container', {
+  dolphinSwiper = app.swiper.create('.swiper-container', {
     speed: 400,
     spaceBetween: 0
   });
@@ -168,7 +168,7 @@ $('#dolphins').on('popup:closed', function (e, popup) {
 
 let obedienceSwiper;
 $('#obedience').on('popup:opened', function (e, popup) {
-  lionSwiper = app.swiper.create('.swiper-container', {
+  obedienceSwiper = app.swiper.create('.swiper-container', {
     speed: 400,
     spaceBetween: 0
   });
