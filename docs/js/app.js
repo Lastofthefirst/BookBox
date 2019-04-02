@@ -1,7 +1,14 @@
 // Framework7 App main instance
 let app  = new Framework7({
-  root: '#app'
-});
+  root: '#app',
+  routes: [
+    {name: 'obedience',
+      path: '/obedience/',
+      url: './pages/obedience.html',
+  },
+  ]
+  }
+);
 
 let $$ = Dom7;
 
@@ -93,25 +100,12 @@ function tutorial() {
     console.log('somethings up')
   }
 };
-/*function showPrayer() {
-  let x = document.getElementById("prayerbook");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-};
-function showPurity() {
-  let x = document.getElementById("puritybook");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-};
-function showHasan() {
-  let x = document.getElementById("hasanbook");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-};
-*/
+
+function popupDestroy(){
+  app.popup.destroy()
+}
+
+
 let prayerSwiper;
 $('#prayer').on('popup:opened', function (e, popup) {
   prayerSwiper = app.swiper.create('.swiper-container', {
@@ -175,4 +169,23 @@ $('#obedience').on('popup:opened', function (e, popup) {
 });
 $('#obedience').on('popup:closed', function (e, popup) {
   app.swiper.destroy('.swiper-container');
+
 });
+/*
+var swiperInstances = {};
+$(".swiper-container").each(function(index, element){
+    var $this = $(this);
+    $this.addClass("instance-" + index);
+    $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
+    $this.find(".swiper-button-next").addClass("btn-next-" + index);
+    swiperInstances[index] = new Swiper(".instance-" + index, {
+        // your settings ...
+        speed: 900,
+        snapOnRelease: true
+    });
+});
+
+// Now you can call the update on a specific instance in the "swiperInstances" object
+// e.g.
+swiperInstances[3].update();
+*/
