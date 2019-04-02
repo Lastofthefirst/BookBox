@@ -1,13 +1,8 @@
 // Framework7 App main instance
 let app  = new Framework7({
   root: '#app',
-  routes: [
-    {name: 'obedience',
-      path: '/obedience/',
-      url: './pages/obedience.html',
-  },
-  ]
-  }
+  routes: routes,
+}
 );
 
 let $$ = Dom7;
@@ -53,13 +48,6 @@ $$('.pb-standalone').on('click', function () {
 });
 
 
-localforage.clear('ownedBooks').then(function() {
-  // Run this code once the database has been entirely deleted.
-  console.log('Database is now empty.');
-}).catch(function(err) {
-  // This code runs if there were any errors
-  console.log(err);
-});
 
 tutorial();
 
@@ -87,17 +75,10 @@ function purchaseBook(bookName){
 }
 
 //try and write a function for if the box of books is empty
-function tutorial() {
-  let a = document.getElementById("prayerbook");
-  let b = document.getElementById("puritybook");
-  let c = document.getElementById("hasanbook");
-  let d = document.getElementById("tutordisplay");
-  if (a.style.display === "none" && b.style.display === "none" && c.style.display === "none"){
-    d.style.display = "block";
-    console.log('heres your tutorial');
-  }
-  else{
-    console.log('somethings up')
+function tutorial(){
+  if (purchasedBooks.length > 1){
+    let t =  document.getElementById('tutordisplay').display;
+    t = "none";
   }
 };
 
@@ -161,7 +142,7 @@ $('#dolphins').on('popup:closed', function (e, popup) {
 });
 
 let obedienceSwiper;
-$('#obedience').on('popup:opened', function (e, popup) {
+$('#obedience').on('page:opened', function (e, popup) {
   obedienceSwiper = app.swiper.create('.swiper-container', {
     speed: 400,
     spaceBetween: 0
@@ -171,6 +152,12 @@ $('#obedience').on('popup:closed', function (e, popup) {
   app.swiper.destroy('.swiper-container');
 
 });
+
+
+  let swiper = app.swiper.create('.swiper-container', {
+    speed: 400,
+    spaceBetween: 0
+  });
 /*
 var swiperInstances = {};
 $(".swiper-container").each(function(index, element){
