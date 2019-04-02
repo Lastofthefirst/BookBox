@@ -84,8 +84,3 @@ function clearBooks(){
 });
 location.reload(); 
 }
-
-$$('.hide-navbar').on('click', function () {
-  app.navbar.hide('.navbar');
-  console.log('foundme')
-});
