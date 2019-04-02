@@ -55,6 +55,6 @@
   color:black;
   background-color: rgb(204, 221, 199);
 }
-i, span, .icon{
+i, span, a, .icon .fa{
   color: white;
 }
