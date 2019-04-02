@@ -49,6 +49,7 @@
 .navbar-inner{
   background-color: rgb(22, 75, 22);
   font-family: Georgia, serif;
+  color: white;
 }
 .page-content{
   color:black;
