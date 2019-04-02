@@ -23,6 +23,10 @@ routes = [
   path: '/elephants/',
   url: './pages/elephants.html',
 },
+{
+  path: '/look/',
+  url: './pages/look.html',
+},
 
   // Page Loaders & Router
   {

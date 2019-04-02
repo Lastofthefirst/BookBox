@@ -37,7 +37,7 @@ function reader_Screen(cl, vw){
   let view = document.getElementsByClassName(vw);
   for(let i=0; i<view.length; ++i){
      let s = view[i].style;
-     s.backgroundColor = s.backgroundColor==='black' ? 'white' : 'black';
+     s.backgroundColor = s.backgroundColor==='black' ? 'rgb(204, 221, 199)' : 'black';
   };
 }
 
