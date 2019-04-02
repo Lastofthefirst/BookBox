@@ -14,11 +14,17 @@ let mainView = app.views.create('.view-main', {
 
 let purchasedBooks = [];
 
+
+
 function loadPurchasedBooks() {
   purchasedBooks.forEach(function(book) {
     $("#" + book).show();
   });
 }
+
+
+
+tutorial();
 
 let none;
 
@@ -35,21 +41,6 @@ function reader_Screen(cl, vw){
   };
 }
 
-var myPhotoBrowserStandalone = app.photoBrowser.create({
-  photos : [
-      'Ob/Ob.001.jpeg',
-      'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
-      'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
-  ]
-});
-//Open photo browser on click
-$$('.pb-standalone').on('click', function () {
-  myPhotoBrowserStandalone.open();
-});
-
-
-
-tutorial();
 
 
 // load any localforage data
@@ -81,77 +72,6 @@ function tutorial(){
     t = "none";
   }
 };
-
-function popupDestroy(){
-  app.popup.destroy()
-}
-
-
-let prayerSwiper;
-$('#prayer').on('popup:opened', function (e, popup) {
-  prayerSwiper = app.swiper.create('.swiper-container', {
-    speed: 400,
-    spaceBetween: 0
-  });
-});
-$('#prayer').on('popup:closed', function (e, popup) {
-  app.swiper.destroy('.swiper-container');
-});
-let puritySwiper;
-$('#purity').on('popup:opened', function (e, popup) {
-  puritySwiper = app.swiper.create('.swiper-container', {
-    speed: 400,
-    spaceBetween: 0
-  });
-});
-$('#purity').on('popup:closed', function (e, popup) {
-  app.swiper.destroy('.swiper-container');
-});
-
-let lionsSwiper;
-$('#lions').on('popup:opened', function (e, popup) {
-  lionSwiper = app.swiper.create('.swiper-container', {
-    speed: 400,
-    spaceBetween: 0
-  });
-});
-$('#lions').on('popup:closed', function (e, popup) {
-  app.swiper.destroy('.swiper-container');
-});
-
-let elephantsSwiper;
-$('#elephants').on('popup:opened', function (e, popup) {
-  elephantSwiper = app.swiper.create('.swiper-container', {
-    speed: 400,
-    spaceBetween: 0
-  });
-});
-$('#elephants').on('popup:closed', function (e, popup) {
-  app.swiper.destroy('.swiper-container');
-});
-
-let dolphinsSwiper;
-$('#dolphins').on('popup:opened', function (e, popup) {
-  dolphinSwiper = app.swiper.create('.swiper-container', {
-    speed: 400,
-    spaceBetween: 0
-  });
-});
-$('#dolphins').on('popup:closed', function (e, popup) {
-  app.swiper.destroy('.swiper-container');
-});
-
-let obedienceSwiper;
-$('#obedience').on('page:opened', function (e, popup) {
-  obedienceSwiper = app.swiper.create('.swiper-container', {
-    speed: 400,
-    spaceBetween: 0
-  });
-});
-$('#obedience').on('popup:closed', function (e, popup) {
-  app.swiper.destroy('.swiper-container');
-
-});
 
 
   let swiper = app.swiper.create('.swiper-container', {

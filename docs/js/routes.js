@@ -4,14 +4,6 @@ routes = [
     url: './index.html',
   },
   {
-    path: '/about/',
-    url: './pages/about.html',
-  },
-  {
-    path: '/form/',
-    url: './pages/form.html',
-  },
-  {
     path: '/obedience/',
     url: './pages/obedience.html',
 },
@@ -19,6 +11,19 @@ routes = [
   path: '/dolphins/',
   url: './pages/dolphins.html',
 },
+{
+  path: '/prayer/',
+  url: './pages/prayer.html',
+},
+{
+  path: '/lions/',
+  url: './pages/lions.html',
+},
+{
+  path: '/elephants/',
+  url: './pages/elephants.html',
+},
+
   // Page Loaders & Router
   {
     path: '/page-loader-template7/:user/:userId/:posts/:postId/',
