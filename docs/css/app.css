@@ -46,6 +46,11 @@
     justify-content:center;
     align-items:center;
  }
- .page-content{
-   background-color: rgb(204, 221, 199);
- }
+.navbar-inner{
+  background-color: rgb(22, 75, 22);
+  font-family: Georgia, serif;
+}
+.page-content{
+  color:black;
+  background-color: rgb(204, 221, 199);
+}

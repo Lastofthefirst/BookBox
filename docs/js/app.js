@@ -24,10 +24,9 @@ function loadPurchasedBooks() {
 
 
 
-tutorial();
-
 let none;
 
+// This function toggles the background color and navbar visibility within the bookswipers
 function reader_Screen(cl, vw){
   let els = document.getElementsByClassName(cl);
   for(let i=0; i<els.length; ++i){
@@ -54,6 +53,7 @@ localforage.getItem('ownedBooks').then(function(ownedBooksValue) {
   console.log(err);
 });
 
+//This function gets called each time a book is purchased
 function purchaseBook(bookName){
   purchasedBooks.push(bookName+'book');
   loadPurchasedBooks();
@@ -66,19 +66,14 @@ function purchaseBook(bookName){
 }
 
 //try and write a function for if the box of books is empty
-function tutorial(){
-  if (purchasedBooks.length > 1){
-    let t =  document.getElementById('tutordisplay').display;
-    t = "none";
-  }
-};
 
-
+//allows for auto initiating swipers in framework7
   let swiper = app.swiper.create('.swiper-container', {
     speed: 400,
     spaceBetween: 0
   });
 
+//Deletes all purchased books, when called, does not have a confirm button because of current purchaseless format
 function clearBooks(){
   localforage.clear().then(function() {
     // Run this code once the database has been entirely deleted.
