@@ -1,19 +1,4 @@
-/* Your app styles here */
-  
-  
-  /* or an alternative brown color scheme:
-  .page-content{
-  
-  background-color: rgba(181,148,116,0.65);
-  }
-  
-  .list{
-  background-color: white;
-  color: rgba(150,80,80,0.8);
-  border-radius:0px 10px 10px 0px;
-  font-weight: bold;
-  }
-  */
+
   
   .block-title{
     font-family: Georgia, serif;
@@ -56,5 +41,10 @@
     max-height: 85vh;
     max-width: 100vw;
   }
-  
+  .bookView{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ }
+
   

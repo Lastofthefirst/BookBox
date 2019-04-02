@@ -26,16 +26,17 @@
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/localforage.min.js"></script>
    <style>
-      .bookView{
-         display:flex;
-         justify-content:center;
-         align-items:center;
-      }
+.color-theme-teal {
+  --f7-theme-color: #009688;
+  --f7-theme-color-rgb: 0, 150, 136;
+  --f7-theme-color-shade: #006d63;
+  --f7-theme-color-tint: #00bfad;
+}
 
       </style>
    </head>
    <body>
-      <div id="app">
+      <div id="app" class="color-theme-teal">
       <!-- Status bar overlay for fullscreen mode-->
       <div class="statusbar"></div>
       <!-- Left panel with cover effect-->
@@ -50,7 +51,7 @@
                </div>
                <div class="page-content">
                   <div class="block"><i class="fas fa-share-square"></i></div>
-                  <div class="block"><a href"#" class="icon-only popup-open" data-popup="#faq"><i class="fas fa-question"></i><a></div>
+                  <div class="block"><a href="#" class="icon-only popup-open" data-popup="#faq"><i class="fas fa-question"></i><a></div>
                   <div class="block">Contact</div>
                   <div class="block"><a class="external" href="https://www.bahai.org">Learn about the Baha'i Faith</a></div>
                   <div class="block"><a href="#" class="popup-open" data-popup="#options">Options</a></div>
