@@ -55,3 +55,6 @@
   color:black;
   background-color: rgb(204, 221, 199);
 }
+i, span, .icon{
+  color: white;
+}
