@@ -78,21 +78,14 @@ function tutorial(){
     speed: 400,
     spaceBetween: 0
   });
-/*
-var swiperInstances = {};
-$(".swiper-container").each(function(index, element){
-    var $this = $(this);
-    $this.addClass("instance-" + index);
-    $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
-    $this.find(".swiper-button-next").addClass("btn-next-" + index);
-    swiperInstances[index] = new Swiper(".instance-" + index, {
-        // your settings ...
-        speed: 900,
-        snapOnRelease: true
-    });
-});
 
-// Now you can call the update on a specific instance in the "swiperInstances" object
-// e.g.
-swiperInstances[3].update();
-*/
+function clearBooks(){
+  localforage.clear().then(function() {
+    // Run this code once the database has been entirely deleted.
+    console.log('Database is now empty.');
+}).catch(function(err) {
+    // This code runs if there were any errors
+    console.log(err);
+});
+location.reload(); 
+}

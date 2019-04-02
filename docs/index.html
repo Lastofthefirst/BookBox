@@ -26,35 +26,45 @@
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/localforage.min.js"></script>
    <style>
-.color-theme-teal {
-  --f7-theme-color: #009688;
-  --f7-theme-color-rgb: 0, 150, 136;
-  --f7-theme-color-shade: #006d63;
-  --f7-theme-color-tint: #00bfad;
-}
+
 
       </style>
    </head>
    <body>
-      <div id="app" class="color-theme-teal">
+      <div id="app">
       <!-- Status bar overlay for fullscreen mode-->
       <div class="statusbar"></div>
       <!-- Left panel with cover effect-->
       <!-- Right panel with reveal effect-->
-      <div class="panel panel-left panel-reveal theme-dark">
+      <div class="panel panel-left panel-reveal">
          <div class="view">
             <div class="page">
                <div class="navbar">
                   <div class="navbar-inner">
-                     <div class="title"><i class="fas fa-box-open"></i></div>
+                     <div class="title">Menu</div>
                   </div>
                </div>
                <div class="page-content">
-                  <div class="block"><i class="fas fa-share-square"></i></div>
-                  <div class="block"><a href="#" class="icon-only popup-open" data-popup="#faq"><i class="fas fa-question"></i><a></div>
-                  <div class="block">Contact</div>
-                  <div class="block"><a class="external" href="https://www.bahai.org">Learn about the Baha'i Faith</a></div>
-                  <div class="block"><a href="#" class="popup-open" data-popup="#options">Options</a></div>
+                  <div class="block"><a href="#" class="icon-only popup-open" data-popup="#faq">Information<a></div>
+                  <div class="block"><a class="link external" href="mailto:quddus19@gmail.com">Contact</a></div>
+                  <div class="block"><a class="external" href="https://www.bahai.org">Learn more about the Bahá'í Faith</a></div>
+                  <div class="block"><a href="#" onclick='clearBooks();'>Clear Books</a></div>
+                        <div class="card-content">
+                          <div class="list media-list">
+                            <ul>
+                              <li class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title">Brought to you by:</div>
+                                  </div>
+                                </div>
+                                <div class="item-media"><img style="height: 50px; margin-right: 10px; margin-top: 5px;" src="books/holder/IdealLogo.jpg" width="85"/></div>
+
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                  <div class="block" style="font-size: 80%;"></div>
                </div>
             </div>
          </div>
@@ -68,13 +78,13 @@
          <div class="navbar-inner">
             <div class="left">
               <a href="#" class="link icon-only panel-open" data-panel="left">
-               <i class="fas fa-box"></i>
+               <i class="fas fa-bars"></i>
               </a>
             </div>
             <div class="title sliding">BookBox</div>
             <div class="right">
                 <a href="#" class="link icon-only popup-open" onclick="setTimeout(document.getElementById('tutordisplay').style.display = 'none',30000);" data-popup="#shop">
-                  <i class="fas fa-shopping-basket"></i>
+                  <i class="fas fa-box-open"></i>
                 </a>
             </div>
          </div>
@@ -164,7 +174,7 @@
                                                       <div class="item-inner">
                                                         <div class="item-title-row">
                                                           <div class="item-title">Exploring Spiritual Reality: Prayer</div>
-                                                          <div class="item-after">$0.99</div>
+                                                          <div class="item-after">Free</div>
                                                         </div>
                                                         <div class="item-subtitle">How do we pray?</div>
                                                         <div class="item-text">Exploring the concept of prayer and its associated habits and behaviors.</div>
@@ -215,7 +225,7 @@
                                                       <div class="item-inner">
                                                         <div class="item-title-row">
                                                           <div class="item-title">Lions</div>
-                                                          <div class="item-after">$0.99</div>
+                                                          <div class="item-after">Free</div>
                                                         </div>
                                                         <div class="item-subtitle"></div>
                                                         <div class="item-text">A bit of gathered information and a few pictures of lions.</div>
@@ -373,63 +383,52 @@
                <div class="page-content">
                  <div   class="list accordion-list">
                     <ul>
+                        <li class="accordion-item">
+                              <a href="#" class="item-content item-link">
+                                 <div class="item-inner">
+                                    <div class="item-title">Categories</div>
+                                 </div>
+                              </a>
+                              <div class="accordion-item-content">
+                                 <div class="block">
+                                       <p> There are three categories of books currently:
+                                             <hr>Exploring Spiritual Reality. These books explore directly themes related to religion, the life of the soul, and prayer. These books draw on the Teachings of Bahá'u'lláh. To <a class="external" href="https://www.bahai.org">learn more about the Bahá'í Faith.</a>
+                                            <hr>Quality Stories. These stories are fictional and explore a particular spiritual quality, such as obedience, humility or reverence.
+                                         <hr>Exploring Material Reality. These books explore the physical world, and all its animals, plants,minerals and systems.</p>
+                                 </div>
+                              </div>
+                           </li>
                        <li class="accordion-item">
                           <a href="#" class="item-content item-link">
                              <div class="item-inner">
-                                <div class="item-title">Who are these books for?</div>
+                                <div class="item-title">Navigation</div>
                              </div>
                           </a>
                           <div class="accordion-item-content">
                              <div class="block">
-                               <h4>Who are these books for?</h4>
-                               <p>These books are for anyone who would like to read them! </p>
+                                <hr>
+                               <p> The shop is in the top right corner.
+                                  <hr>Once you have selected a book it will appear in your box.
+                                 <hr>Tap the book in your box to read it.
+                              <hr>Swipe left or right to navigate pages, and tap on the page to toggle reader mode. </p>
                              </div>
                           </div>
                        </li>
                        <li class="accordion-item">
-                          <a href="#" class="item-content item-link">
-                             <div class="item-inner">
-                                <div class="item-title">What is the purpose?</div>
-                             </div>
-                          </a>
-                          <div class="accordion-item-content">
-                             <div class="block">
-                            <h4>What is the purpose of these books?</h4>
-                            <p>They serve in part as a collection of related ideas around a certain topic. This makes them a great tool for developing the ability to speak and discuss that topic. I myself for example, wrote teh book about prayer in order to better explain why and how we pray to my children.</p>
-
-                                </div>
-                             </div>
-
-                       </li>
-                       <li class="accordion-item">
-                          <a href="#" class="item-content item-link">
-                             <div class="item-inner">
-                                <div class="item-title">Why publish the books on an app?</div>
-                             </div>
-                          </a>
-                          <div class="accordion-item-content">
-                             <div class="block">
-                               <h4>Why publish the books on an app?</h4>
-                               <p>I can offer the books to more people at a lower cost!</p>
-
-                            </div>
+                           <a href="#" class="item-content item-link">
+                              <div class="item-inner">
+                                 <div class="item-title">Purpose</div>
+                              </div>
+                           </a>
+                           <div class="accordion-item-content">
+                              <div class="block">
+                                 <hr>
+                                <p> The bookbox is a way to share the books I make for my own children with others, at as little cost as possible.</p>
+                              </div>
                            </div>
-                       </li>
-                       <li class="accordion-item">
-                          <a href="#" class="item-content item-link">
-                             <div class="item-inner">
-                                <div class="item-title">I would like to write a similar book!</div>
-                             </div>
-                          </a>
-                          <div class="accordion-item-content">
-                             <div class="block">
-                               <h4>Could you publish it in this app?</h4>
-                              <p>That sounds wonderful! Contact me at idealmineprinting@gmail.com and lets discuss how we can make that possible!
-                              </p>
-                                </div>
-                             </div>
+                        </li>
 
-                       </li>
+
                     </ul>
                  </div>
                </div>
