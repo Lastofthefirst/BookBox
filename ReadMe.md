@@ -24,7 +24,7 @@ Internet Explorer
 
 ## Authors
 
-* **Quddús George** - [Lastofthefirst](https://github.com/Lastofthefirst)
+* **Quddús George** -*Sole Author*- [Lastofthefirst](https://github.com/Lastofthefirst)
 
 
 ## Acknowledgments
