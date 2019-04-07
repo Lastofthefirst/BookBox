@@ -17,11 +17,10 @@ let purchasedBooks = [];
 
 function loadPurchasedBooks() {
   purchasedBooks.forEach(function(book) {
-      $("#" + book).show();
+      let bookHome = document.getElementById(book).style;
+      bookHome.display ="block";
   });
 }
-
-
 
 let none;
 
